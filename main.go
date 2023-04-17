@@ -40,8 +40,8 @@ func AutoRedeploy() {
 	req, err := http.NewRequest("POST", Con.Url, payload)
 	if err != nil {
 		log.Println(err)
-		log.Println("url:", Con.Url, "\nbody:", payload)
 	}
+	log.Println("url:", Con.Url, "\nbody:", payload)
 
 	req.Header.Add("Content-Type", "application/json; charset=utf-8")
 
