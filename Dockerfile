@@ -24,4 +24,6 @@ RUN chmod +x /usr/bin/main
 
 WORKDIR /data
 
+
+
 ENTRYPOINT [ "/usr/bin/main" ]
