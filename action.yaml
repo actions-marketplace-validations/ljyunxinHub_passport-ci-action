@@ -6,7 +6,7 @@ inputs:
     required: true
   url:
     description: "target server"
-    required: false
+    required: true
 runs:
   using: "docker"
   image: "Dockerfile"
