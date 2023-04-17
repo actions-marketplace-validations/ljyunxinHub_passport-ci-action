@@ -1,0 +1,31 @@
+name: Redeploy passport Action
+description: >
+  send a request to server to redeploy passport
+inputs:
+  backend:
+    description: "Rancher Server"
+    required: true
+  token:
+    description: "Rancher Bearer Token"
+    required: true
+  cluster:
+    description: "Rancher Cluster"
+    required: false
+  namespace:
+    description: "Rancher Namespace"
+    required: true
+  deployment:
+    description: "Rancher Deployment"
+    required: true
+  container:
+    description: "Deployment Container Index"
+    required: false
+  image:
+    description: "Target Image"
+    required: true
+  wait:
+    description: "Waiting workload available"
+    required: false
+runs:
+  using: "docker"
+  image: "Dockerfile"
