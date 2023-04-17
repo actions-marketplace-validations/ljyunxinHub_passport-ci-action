@@ -21,8 +21,8 @@ func main() {
 }
 
 func InitConfig(c *Config) {
-	c.Access_token = os.Getenv("ACCESS_TOKEN")
-	c.Url = os.Getenv("URL")
+	c.Access_token = os.Getenv("INPUT_ACCESS_TOKEN")
+	c.Url = os.Getenv("INPUT_URL")
 	log.SetFlags(log.Ldate | log.Ltime | log.Lshortfile)
 }
 
